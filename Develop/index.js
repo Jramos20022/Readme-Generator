@@ -64,11 +64,6 @@ const questions = [
     message: "Please list any contributors. (Use GitHub usernames)",
     default: "",
   },
-  {
-    type: "input",
-    name: "test",
-    message: "Provide walkthrough of required tests if applicable.",
-  },
 ];
 
 // Writing README.md File
