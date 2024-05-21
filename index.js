@@ -2,7 +2,7 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const path = require("path");
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./generateMarkdown");
 
 //Creating an array of questions for user input
 const questions = [
@@ -19,12 +19,14 @@ const questions = [
   {
     type: "input",
     name: "screenshot",
-    message: "Please provide the relative path to the image you want to use as the screenshot."
+    message:
+      "Please provide the relative path to the image you want to use as the screenshot.",
   },
   {
     type: "input",
     name: "link",
-    message: "Please provide a URL where a user can access your deployed application."
+    message:
+      "Please provide a URL where a user can access your deployed application.",
   },
   {
     type: "checkbox",
@@ -63,6 +65,11 @@ const questions = [
     name: "contributors",
     message: "Please list any contributors. (Use GitHub usernames)",
     default: "",
+  },
+  {
+    type: "input",
+    name: "test",
+    message: "Provide walkthrough of required tests if applicable.",
   },
 ];
 
